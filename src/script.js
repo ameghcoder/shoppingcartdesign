@@ -73,6 +73,33 @@ const init = () => {
     if(localStorage.getItem('addToCart-glass') != null){
         badgeNumber.innerHTML = parseInt(localStorage.getItem('addToCart-glass'));
     }
+
+    const changeMode = document.getElementById('changeMode');
+    const _Body = document.body;
+    changeMode.addEventListener('click', () => {
+        if(_Body.getAttribute('data-theme') == 'light'){
+            changeMode.children[0].classList.add('left-6');
+            changeMode.children[0].classList.remove('left-0');
+            _Body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else{
+            changeMode.children[0].classList.add('left-0');
+            changeMode.children[0].classList.remove('left-6');
+            _Body.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    })
+    if(localStorage.getItem('theme') != null){
+        if(localStorage.getItem('theme') == 'dark'){
+            changeMode.children[0].classList.add('left-6');
+            changeMode.children[0].classList.remove('left-0');
+            _Body.setAttribute('data-theme', 'dark');
+        } else{
+            changeMode.children[0].classList.add('left-0');
+            changeMode.children[0].classList.remove('left-6');
+            _Body.setAttribute('data-theme', 'light');
+        }
+    }
 }
 
 document.readyState == "interactive" ? init() : document.addEventListener('DOMContentLoaded', () => init());

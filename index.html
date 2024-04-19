@@ -6,13 +6,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style_v1.css">
     <title>Product Preview</title>
 </head>
 <body data-theme="light">
     <div class="outer-container w-full h-screen overflow-y-auto flex flex-col gap-2 items-start justify-center p-0 sm:p-2 md:p-4 bg-q_surface_clr backImage">
-        <div class="bg-q_background_clr/25 backdrop-blur-lg border border-q_br_clr w-full p-4 max-w-5xl mx-auto rounded-lg shadow-lg flex flex-col items-start justify-between gap-2 lg:flex-row ">
-                Created by Yashraj
+        <div class="bg-q_background_clr/25 backdrop-blur-lg border border-q_br_clr w-full p-4 max-w-5xl mx-auto rounded-lg shadow-lg flex flex-row items-start justify-between gap-2">
+                <span>Change Mode</span>
+                <button id="changeMode" class="relative w-12 d h-4 p-1 rounded-full shadow-inner border border-q_br_clr" type="button">
+                    <span class="absolute -top-1 left-0 shadow-md w-6 h-6 rounded-full bg-q_primary_clr transition-all"></span>
+                </button>
         </div>
         <div class="inner-container bg-q_background_clr/25 backdrop-blur-lg border border-q_br_clr w-full h-full p-4 max-w-5xl mx-auto rounded-lg shadow-lg flex flex-col items-start justify-between gap-2 lg:flex-row overflow-y-auto relative">
             <div class="fixed right-0 top-0 m-2 p-2 flex items-center justify-center shadow-md rounded-md border border-q_br_clr yellowClr z-50">
