@@ -554,21 +554,21 @@ span.icon {
 }
 
 span.shoppingCart{
-  background-image: url('/assets/shopping_cart.svg');
+  background-image: url('../assets/shopping_cart.svg');
 }
 
 span.starFull{
-  background-image: url('/assets/Half_Star.svg');
+  background-image: url('../assets/Half_Star.svg');
   --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 span.navigate{
-  background-image: url('/assets/arrow-to-navigate.svg');
+  background-image: url('../assets/arrow-to-navigate.svg');
 }
 
 .backImage{
-  background-image: url('/assets/back-image.svg');
+  background-image: url('../assets/back-image.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -732,16 +732,16 @@ span.navigate{
   left: 0px;
 }
 
+.left-6 {
+  left: 1.5rem;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.left-6 {
-  left: 1.5rem;
 }
 
 .z-50 {

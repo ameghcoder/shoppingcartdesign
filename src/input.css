@@ -91,27 +91,27 @@
         @apply inline-block w-5 h-5 bg-contain bg-no-repeat;
     }
     span.arrow{
-        background-image: url('/assets/left_arrow_icon.svg');
+        background-image: url('../assets/left_arrow_icon.svg');
     }
     span.right-arrow{
-        background-image: url('/assets/right_arrow_icon.svg');
+        background-image: url('../assets/right_arrow_icon.svg');
     }
     span.shoppingCart{
-        background-image: url('/assets/shopping_cart.svg');
+        background-image: url('../assets/shopping_cart.svg');
     }
     span.star{
-        background-image: url('/assets/Star.svg');
+        background-image: url('../assets/Star.svg');
         @apply drop-shadow-sm;
     }
     span.starFull{
-        background-image: url('/assets/Half_Star.svg');
+        background-image: url('../assets/Half_Star.svg');
         @apply drop-shadow-sm;
     }
     span.navigate{
-        background-image: url('/assets/arrow-to-navigate.svg');
+        background-image: url('../assets/arrow-to-navigate.svg');
     }
     .backImage{
-        background-image: url('/assets/back-image.svg');
+        background-image: url('../assets/back-image.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
