@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Product Preview</title>
+</head>
+<body data-theme="light">
+    <div class="outer-container w-full h-screen overflow-y-auto flex flex-col gap-2 items-start justify-center p-0 sm:p-2 md:p-4 bg-q_surface_clr backImage">
+        <div class="bg-q_background_clr/25 backdrop-blur-lg border border-q_br_clr w-full p-4 max-w-5xl mx-auto rounded-lg shadow-lg flex flex-col items-start justify-between gap-2 lg:flex-row ">
+                Created by Yashraj
+        </div>
+        <div class="inner-container bg-q_background_clr/25 backdrop-blur-lg border border-q_br_clr w-full h-full p-4 max-w-5xl mx-auto rounded-lg shadow-lg flex flex-col items-start justify-between gap-2 lg:flex-row overflow-y-auto relative">
+            <div class="fixed right-0 top-0 m-2 p-2 flex items-center justify-center shadow-md rounded-md border border-q_br_clr yellowClr z-50">
+                <span class="icon shoppingCart"></span>
+                <span id="badge-counter" class="border-l border-q_br_clr mx-2 pl-2 hidden">0</span>
+            </div>
+            <div class="w-full max-w-none lg:max-w-1/2 flex justify-center items-center">
+                <div id="img-preview" class="glide relative w-full max-w-lg">
+                    <div class="flex w-full items-center">
+                        <img class="imgPreview w-full max-m-96 h-auto shadow-md rounded-lg border border-q_br_clr" src="./product/image-1.webp" alt="image preview">
+                    </div>
+                    <div class="flex my-4 border border-q_br_clr overflow-hidden relative rounded-lg group">
+                        <div class="img-slider overflow-x-auto flex gap-2 p-4 noScrollbar">
+                            <img class="showImageBtn w-14 h-14 object-cover rounded-md shadow-md" data-skin-src="./product/image-1.webp" data-blue-src="./product/image-1-b.webp" src="./product/image-1.webp" alt="">
+                            <img class="showImageBtn w-14 h-14 object-cover rounded-md shadow-md" data-skin-src="./product/image-2.webp" data-blue-src="./product/image-2-b.webp" src="./product/image-2.webp" alt="">
+                            <img class="showImageBtn w-14 h-14 object-cover rounded-md shadow-md" data-skin-src="./product/image-3.webp" data-blue-src="./product/image-3-b.webp" src="./product/image-3.webp" alt="">
+                            <img class="showImageBtn w-14 h-14 object-cover rounded-md shadow-md" data-skin-src="./product/image-4.jpg" data-blue-src="./product/image-4-b.webp" src="./product/image-4.jpg" alt="">
+                            <img class="showImageBtn w-14 h-14 object-cover rounded-md shadow-md" data-skin-src="./product/image-5.jpg" data-blue-src="./product/image-5-b.webp" src="./product/image-5.jpg" alt="">
+                            <img class="showImageBtn w-14 h-14 object-cover rounded-md shadow-md" data-skin-src="./product/image-6.jpg" data-blue-src="./product/image-6-b.webp" src="./product/image-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col gap-2">
+                <div>
+                    <h1 class="text-2xl bold-font my-2">Transparent Full Rim Rectangle</h1>
+                    <p class="text-sm md:text-base">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dicta aliquid nulla sint mollitia asperiores, saepe aliquam aspernatur cumque quia hic ipsum consequuntur vero quis quos, rerum alias. Pariatur, voluptatem.
+                    </p>
+                    <br>
+                    <div class="rating flex gap-2 items-center">
+                        <strong>Rating</strong>
+                        <span class="icon starFull"></span>
+                        <span>4.5</span>
+                    </div>
+                    <br>
+                    <div class="PriceTag gap-2 flex items-center">
+                        <span class="text-3xl drop-shadow-sm font-mono bold-font text-q_primary_clr">₹ 1,7500</span>
+                        <del class="text-xl font-mono">2,500</del>
+                    </div>
+                    <div class="flex gap-2 p-2 h-6">
+                        <button class="w-6 h-6 flex items-center justify-center" title="color code - #cdc6be" type="button" id="changeToSkin">
+                            <span id="changeToBorderForSkin" class="inline-block w-6 h-6 rounded-full shadow-lg skin-color activeBorder"></span>
+                        </button>
+                        <button class="w-6 h-6 flex items-center justify-center" title="color code - #161b36" type="button" id="changeToBlue">
+                            <span id="changeToBorderForBlue" class="inline-block w-6 h-6 rounded-full shadow-lg blue-color"></span>
+                        </button>
+                    </div>
+                    <br>
+                    <div>
+                        <strong>Product Details:</strong>
+                        <div class="h-auto border-b group border-q_br_clr my-2 bg-q_surface_clr/25 shadow-md">
+                            <button type="button" data-id="1" class="summary-button bold-font p-4 w-full text-left flex  justify-between">
+                                <span>Technical Information</span>
+                                <span class="navigate icon group-hover:rotate-45 transition-all"></span>
+                            </button>
+                            <div class="details-box h-0 overflow-hidden transition-all" data-id="1">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae eligendi ipsum expedita iure ducimus nam veritatis alias ipsa, ad qui? Omnis magni ipsa perspiciatis obcaecati nulla. Perspiciatis, omnis quidem.</p>
+                            </div>
+                        </div>
+                        <div class="h-auto border-b border-q_br_clr group my-2 bg-q_surface_clr/25 shadow-md">
+                            <button type="button" data-id="2" class="summary-button bold-font p-4 w-full text-left flex  justify-between">
+                                <span>Delivery Options</span>
+                                <span class="navigate icon group-hover:rotate-45 transition-all"></span>
+                            </button>
+                            <div class="details-box h-0 overflow-hidden transition-all" data-id="2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae eligendi ipsum expedita iure ducimus nam veritatis alias ipsa, ad qui? Omnis magni ipsa perspiciatis obcaecati nulla. Perspiciatis, omnis quidem.</p>
+                            </div>
+                        </div>
+                        <div class="h-auto border-b border-q_br_clr group my-2 bg-q_surface_clr/25 shadow-md">
+                            <button type="button" data-id="3" class="summary-button bold-font p-4 w-full text-left flex  justify-between">
+                                <span>Reviews (0)</span>
+                                <span class="navigate icon group-hover:rotate-45 transition-all"></span>
+                            </button>
+                            <div class="details-box h-0 overflow-hidden transition-all" data-id="3">
+                                <p>No Review Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <button id="addToCart" type="button" class="bg-yellow-300 p-4 text-black rounded-md transition-all hover:-translate-y-2 hover:shadow-md">Add to Cart</button>
+                        <button type="button" class="bg-q_primary_clr p-4 text-white rounded-md transition-all hover:-translate-y-2 hover:shadow-md">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/src/script.js"></script>
+</body>
+</html>
