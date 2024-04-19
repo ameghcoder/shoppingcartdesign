@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --success-clr: 40 167 69;
+        --warning-clr: 255 221 0;
+        --wide-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+        --font-family: serif;
+        --container-padding: 10px;
+        --flex-grid-gap: 10px;
+        --br-radius: 5px;
+        --sm-text-size: 12px;
+        --md-text-size: 16px;
+        --lg-text-size: 22px;
+        --heading-text-size: larger;
+        --inner-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    body[data-theme="dark"] {
+        --bg-clr: 24 25 26;
+        --sr-clr: 36 37 38;
+        --br-clr: 50 55 64;
+        --tx-clr: 201 209 217;
+        --primary-clr: 128 187 255;
+        --secondary-clr-1: 31 111 235;
+        --secondary-clr-2: 107 114 128;
+        --link-clr: 88 166 255;
+        --error-clr: 203 36 49;
+        --info-clr: 144 144 255;
+        --box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+        --brightness-for-icon: 0.75;
+        --filter: brightness(1) sepia(1);
+    }
+    body[data-theme="light"] {
+        --bg-clr: 255 255 255;
+        --sr-clr: 245 245 245;
+        --br-clr: 204 204 204;
+        --tx-clr: 36 41 46;
+        --primary-clr: 3 102 214;
+        --secondary-clr-1: 106 115 125;
+        --secondary-clr-2: 176 182 186;
+        --link-clr: 3 102 214;
+        --error-clr: 203 36 49;
+        --box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+        --brightness-for-icon: 0.2;
+        --filter: brightness(0.3) sepia(0);
+    }
+    html {
+        scroll-behavior: smooth;
+        font-family: var(--font-family);
+    }
+    body{
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        @apply transition-all bg-q_background_clr;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgb(var(--bg-clr));
+        @apply rounded-e-lg;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(var(--br-clr));
+        @apply rounded-e-lg;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(var(--sr-clr));
+    }
+    .noScrollbar::-webkit-scrollbar{
+        display: none;
+    }
+    .thin-font{
+        font-weight: 300;
+    }
+    .bold-font{
+        font-weight: 600;
+    }
+    h1, h2, h3, h4, h5, h6, p, span, div, strong, em, details, summary, del{
+        @apply text-q_tx_clr;
+    }
+
+    span.icon{
+        @apply inline-block w-5 h-5 bg-contain bg-no-repeat;
+    }
+    span.arrow{
+        background-image: url('/assets/left_arrow_icon.svg');
+    }
+    span.right-arrow{
+        background-image: url('/assets/right_arrow_icon.svg');
+    }
+    span.shoppingCart{
+        background-image: url('/assets/shopping_cart.svg');
+    }
+    span.star{
+        background-image: url('/assets/Star.svg');
+        @apply drop-shadow-sm;
+    }
+    span.starFull{
+        background-image: url('/assets/Half_Star.svg');
+        @apply drop-shadow-sm;
+    }
+    span.navigate{
+        background-image: url('/assets/arrow-to-navigate.svg');
+    }
+    .backImage{
+        background-image: url('/assets/back-image.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .skin-color{
+        background: #cdc6be;
+    }
+    .blue-color{
+        background: #161b36;
+    }
+    .activeBorder{
+        @apply border-2 border-q_primary_clr scale-105 transition-all;
+    }
+    .showImageBtn{
+        @apply transition-all;
+    }
+    .yellowClr{
+        background-color: #FAEB36;
+    }
+}
